@@ -1,0 +1,11 @@
+@function lh($lineHeight, $fontSize) {
+  @return calc($lineHeight / $fontSize);
+}
+
+@function rem($px) {
+  @return calc($px / 16) + rem;
+}
+
+@function em($pxOne, $pxTwo) {
+  @return calc($pxOne / $pxTwo) + em;
+}
